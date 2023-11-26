@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blueold"
+    tools:context=".ComplaintActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complaint"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="20dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_complaint"
+        tools:listitem="@layout/complaint_list"
+        tools:itemCount="10"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/btn_add"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="end"
+        android:background="@drawable/baseline_add_circle_24"/>
+
+</LinearLayout>
